@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<nav id="navbar">
+    <header id="sp-header">Programming concepts Documentation</header>
+    <ul>
+      <li><a class="nav-link" href="#T1">Introduction</a></li>
+      <li><a class="nav-link" href="#T2">While loop</a></li>
+      <li><a class="nav-link" href="#T3">Do while loop</a></li>
+      <li><a class="nav-link" href="#T4">For loop</a></li>
+      <li><a class="nav-link" href="#T5">IF...ELSE Statement</a></li>
+      <li><a class="nav-link" href="#T6">Functions</a></li>
+      <li><a class="nav-link" href="#T7">Data types</a></li>
+      <li><a class="nav-link" href="#T8">Variables</a></li>
+      <li><a class="nav-link" href="#T9">References</a></li>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section">
+    <header id="T1">Introduction</header>
+    <p>
+      Computer programming is the process of designing and building an executable computer program to accomplish a specific computing result. Programming involves tasks such as: analysis, generating algorithms, profiling algorithms' accuracy and resource consumption, and the implementation of algorithms in a chosen programming language (commonly referred to as coding).[1][2] The source code of a program is written in one or more languages that are intelligible to programmers, rather than machine code, which is directly executed by the central processing unit. The purpose of programming is to find a sequence of instructions that will automate the performance of a task (which can be as complex as an operating system) on a computer, often for solving a given problem. The process of programming thus often requires expertise in several different subjects, including knowledge of the application domain, specialized algorithms, and formal logic.
+    </p></section>
+    <section class="main-section">
+    <header id="T2">While loop</header>
+    <p>
+      The while construct consists of a block of code and a condition/expression.[1] The condition/expression is evaluated, and if the condition/expression is true,[1] the code within all of their following in the block is executed. This repeats until the condition/expression becomes false. Because the while loop checks the condition/expression before the block is executed, the control structure is often also known as a pre-test loop. Compare this with the do while loop, which tests the condition/expression after the loop has executed.
+      see the following fragment of code as an example of while loop:
+      <code>
+        int x = 0; 
+        while(x < 5){ 
+           printf("Hello World!"); 
+           x++; 
+         } 
+        
+    </code>
+    </p></section>
+    <section class="main-section">
+    <header id="T3">Do while loop</header>
+    <p>
+      In most computer programming languages, a do while loop is a control flow statement that executes a block of code at least once, and then repeatedly executes the block, or not, depending on a given boolean condition at the end of the block.
+  
+  The do while construct consists of a process symbol and a condition. First, the code within the block is executed, and then the condition is evaluated. If the condition is true the code within the block is executed again. This repeats until the condition becomes false. Because do while loops check the condition after the block is executed, the control structure is often also known as a post-test loop. Contrast with the while loop, which tests the condition before the code within the block is executed, the do-while loop is an exit-condition loop. This means that the code must always be executed first and then the expression or test condition is evaluated. If it is true, the code executes the body of the loop again. This process is repeated as long as the expression evaluates to true. If the expression is false, the loop terminates and control transfers to the statement following the do-while loop. In other words, whereas a while loop sets the truth of a statement as a condition precedent for the code's execution, a do-while loop provides for the action's ongoing execution subject to defeasance by the condition's falsity, which falsity (i.e., the truth of the condition's negation) is set as a condition subsequent.
+      Example:
+      <code>
+         do {
+      do_work();  
+  } while (condition);
+      </code>
+    </p></section>
+    <section class="main-section">
+    <header id="T4">For loop</header>
+    <p>
+      In computer science, a for-loop (or simply for loop) is a control flow statement for specifying iteration, which allows code to be executed repeatedly. Various keywords are used to specify this statement: descendants of ALGOL use "for", while descendants of Fortran use "do". There are other possibilities, for example COBOL which uses "PERFORM VARYING".
+  
+  A for-loop has two parts: a header specifying the iteration, and a body which is executed once per iteration. The header often declares an explicit loop counter or loop variable, which allows the body to know which iteration is being executed. For-loops are typically used when the number of iterations is known before entering the loop. For-loops can be thought of as shorthands for while-loops which increment and test a loop variable.
+      see the following example on nested for loops in C language:
+      <code>
+        for (i = 0; i < 100; i++) {
+      for (j = i; j < 10; j++) {
+          some_function(i, j);
+      }
+  }
+      </code>
+    </p></section>
+    <section class="main-section">
+    <header id="T5">IF...ELSE Statement</header>
+    <p>
+      In computer science, conditional statements, conditional expressions and conditional constructs are features of a programming language, which perform different computations or actions depending on whether a programmer-specified boolean condition evaluates to true or false. Apart from the case of branch predication, this is always achieved by selectively altering the control flow based on some condition.
+  
+  In imperative programming languages, the term "conditional statement" is usually used, whereas in functional programming, the terms "conditional expression" or "conditional construct" are preferred, because these terms all have distinct meanings.
+  
+  Although dynamic dispatch is not usually classified as a conditional construct, it is another way to select between alternatives at runtime.
+      see the following example:
+      <code>
+        if (x > 10)
+      my_variable = "foo";
+  else
+      my_variable = "bar";
+      </code>
+    </p></section>
+    <section class="main-section">
+    <header id="T6">Functions</header>
+    <p>
+      A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better modularity for your application and a high degree of code reusing. You have already seen various functions like printf() and main(). These are called built-in functions provided by the language itself, but we can write our own functions as well and this tutorial will teach you how to write and use those functions in C programming language.
+  
+  Good thing about functions is that they are famous with several names. Different programming languages name them differently, for example, functions, methods, sub-routines, procedures, etc. If you come across any such terminology, then just imagine about the same concept, which we are going to discuss in this tutorial.
+    </p></section>
+    <section class="main-section">
+    <header id="T7">Data types</header>
+    <p>
+      Let's discuss about a very simple but very important concept available in almost all the programming languages which is called data types. As its name indicates, a data type represents a type of the data which you can process using your computer program. It can be numeric, alphanumeric, decimal, etc.
+  
+  Let’s keep Computer Programming aside for a while and take an easy example of adding two whole numbers 10 & 20, which can be done simply as follows −
+      <code>
+        10 + 20
+  
+      </code>
+    </p></section>
+    <section class="main-section">
+    <header id="T8">Variables</header>
+    <p>
+      Variables are the names you give to computer memory locations which are used to store values in a computer program.
+  
+  For example, assume you want to store two values 10 and 20 in your program and at a later stage, you want to use these two values. Let's see how you will do it
+    </p></section>
+    <section class="main-section">
+    <header id="T9">References</header>
+    <ul type="disc" id="sp-ul">
+      <li>All the documentation in this page is taken from<a href="#" id="sp-link">Wikipedia</a></li>
+    </ul></section>
+  </main>
+</body>
+</html>
